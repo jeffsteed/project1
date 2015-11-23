@@ -1,0 +1,214 @@
+$logoFont: 'Shojumaru', cursive;
+$backgroundColor: rgba(4, 163, 178, 0.9);
+$foregroundColor: rgba(255, 18, 152, 0.8);
+$yellow: rgb(255, 228, 51);
+$border: 2px solid $yellow;
+
+$radius: 15px;
+
+body {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.30),
+    rgba(0, 0, 0, 0.40)), url('../images/bkgimg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: $logoFont;
+  position: relative;
+}
+
+#wrapper {
+  height: 780px;
+}
+
+#logo {
+  background-color: $backgroundColor;
+  height: 80px;
+  color: rgb(255, 228, 51);
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  font-weight: bolder;
+  border-bottom: $border;
+  border-right: $border;
+  border-left: $border;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-family: $logoFont;
+  text-shadow: 0 1px 0 #ccc,
+               0 2px 0 #c9c9c9,
+               0 3px 0 #bbb,
+               0 4px 0 #b9b9b9,
+               0 5px 0 #aaa,
+               0 6px 1px rgba(0, 0, 0,.1),
+               0 0 5px rgba(0, 0, 0,.1),
+               0 1px 3px rgba(0, 0, 0,.3),
+               0 3px 5px rgba(0, 0, 0,.2),
+               0 5px 10px rgba(0, 0, 0,.25),
+               0 10px 10px rgba(0, 0, 0,.2),
+               0 20px 20px rgba(0, 0, 0,.15);
+}
+
+.divider {
+  height: 30px;
+}
+
+#playSpace {
+  height: 540px;
+  border-radius: $radius;
+}
+
+#gameboard {
+  height: 280px;
+  background-color: $foregroundColor;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-top: $border;
+  border-left: $border;
+  border-right: $border;
+}
+
+#diceholder {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+}
+
+#diceRow {
+  height: 180px;
+}
+
+#numRow {
+  height: 100px;
+}
+
+.dice {
+  height: 80%;
+  // background: rgb(250, 235, 215);
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin: 1.66%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.dice:active {
+  -moz-box-shadow:    inset 0 0 20px #000000;
+  -webkit-box-shadow: inset 0 0 20px #000000;
+  box-shadow:         inset 0 0 20px #000000;
+}
+
+#roll-dice {
+  margin: 0 auto;
+  text-align: center;
+  height: 60px;
+  width: 200px;
+  background-color: $foregroundColor;
+  color: $yellow;
+  border: $border;
+}
+
+#end-turn {
+  margin: 0 auto;
+  text-align: center;
+  height: 60px;
+  width: 200px;
+  background-color: $foregroundColor;
+  color: $yellow;
+  border: $border;
+}
+
+.selected {
+  border: 20px solid rgb(255, 228, 51);
+}
+
+#dice1 {
+  background-image: url('../images/ChineseOne.bmp');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#dice2 {
+  background-image: url('../images/ChineseTwo.bmp');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#dice3 {
+  background-image: url('../images/ChineseThree.bmp');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#dice4 {
+  background-image: url('../images/ChineseFour.bmp');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#dice5 {
+  background-image: url('../images/ChineseFive.bmp');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.number {
+  color: rgb(35, 189, 204);
+  margin: 0 1.66% 0 1.66%;
+  text-align: center;
+  text-shadow: -1px 0 $yellow, 0 1px $yellow, 1px 0 $yellow, 0 -1px $yellow;
+}
+
+#scoreboard {
+  background: rgba(35, 189, 204, 0.9);
+  height: 200px;
+  color: $foregroundColor;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-left: $border;
+  border-bottom: $border;
+}
+
+#playerOneScore, #playerTwoScore {
+  color: $yellow;
+}
+
+#messageBoard {
+  text-align: center;
+  background: rgba(4, 163, 178, 0.9);
+  height: 200px;
+  color: rgb(255, 228, 51);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-bottom: $border;
+  border-right: $border;
+}
+
+#messageBoard em {
+  color: $foregroundColor;
+}
+
+#messageBoard h3 {
+  margin-top: 5%;
+}
+
+.final {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: $foregroundColor;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+}
+
+.final h1 {
+  color: $yellow;
+  margin-top: 15%;
+}
+
+#play {
+  margin: 0 auto;
+  text-align: center;
+  height: 60px;
+  width: 200px;
+  background-color: $backgroundColor;
+  color: $yellow;
+  border: $border;
+}

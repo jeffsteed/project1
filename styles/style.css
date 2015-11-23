@@ -1,0 +1,166 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.4)), url("../images/bkgimg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Shojumaru", cursive;
+  position: relative; }
+
+#wrapper {
+  height: 780px; }
+
+#logo {
+  background-color: rgba(4, 163, 178, 0.9);
+  height: 80px;
+  color: #ffe433;
+  text-align: center;
+  border-radius: 0 0 15px 15px;
+  font-weight: bolder;
+  border-bottom: 2px solid #ffe433;
+  border-right: 2px solid #ffe433;
+  border-left: 2px solid #ffe433;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  font-family: "Shojumaru", cursive;
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2), 0 20px 20px rgba(0, 0, 0, 0.15); }
+
+.divider {
+  height: 30px; }
+
+#playSpace {
+  height: 540px;
+  border-radius: 15px; }
+
+#gameboard {
+  height: 280px;
+  background-color: rgba(255, 18, 152, 0.8);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-top: 2px solid #ffe433;
+  border-left: 2px solid #ffe433;
+  border-right: 2px solid #ffe433; }
+
+#diceholder {
+  height: 100%;
+  width: 100%;
+  margin: 0 auto; }
+
+#diceRow {
+  height: 180px; }
+
+#numRow {
+  height: 100px; }
+
+.dice {
+  height: 80%;
+  background-color: white;
+  border-radius: 20px;
+  margin-top: 2%;
+  margin: 1.66%;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); }
+
+.dice:active {
+  -moz-box-shadow: inset 0 0 20px #000000;
+  -webkit-box-shadow: inset 0 0 20px #000000;
+  box-shadow: inset 0 0 20px #000000; }
+
+#roll-dice {
+  margin: 0 auto;
+  text-align: center;
+  height: 60px;
+  width: 200px;
+  background-color: rgba(255, 18, 152, 0.8);
+  color: #ffe433;
+  border: 2px solid #ffe433; }
+
+#end-turn {
+  margin: 0 auto;
+  text-align: center;
+  height: 60px;
+  width: 200px;
+  background-color: rgba(255, 18, 152, 0.8);
+  color: #ffe433;
+  border: 2px solid #ffe433; }
+
+.selected {
+  border: 20px solid #ffe433; }
+
+#dice1 {
+  background-image: url("../images/ChineseOne.bmp");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#dice2 {
+  background-image: url("../images/ChineseTwo.bmp");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#dice3 {
+  background-image: url("../images/ChineseThree.bmp");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#dice4 {
+  background-image: url("../images/ChineseFour.bmp");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+#dice5 {
+  background-image: url("../images/ChineseFive.bmp");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.number {
+  color: #23bdcc;
+  margin: 0 1.66% 0 1.66%;
+  text-align: center;
+  text-shadow: -1px 0 #ffe433, 0 1px #ffe433, 1px 0 #ffe433, 0 -1px #ffe433; }
+
+#scoreboard {
+  background: rgba(35, 189, 204, 0.9);
+  height: 200px;
+  color: rgba(255, 18, 152, 0.8);
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-left: 2px solid #ffe433;
+  border-bottom: 2px solid #ffe433; }
+
+#playerOneScore, #playerTwoScore {
+  color: #ffe433; }
+
+#messageBoard {
+  text-align: center;
+  background: rgba(4, 163, 178, 0.9);
+  height: 200px;
+  color: #ffe433;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+  border-bottom: 2px solid #ffe433;
+  border-right: 2px solid #ffe433; }
+
+#messageBoard em {
+  color: rgba(255, 18, 152, 0.8); }
+
+#messageBoard h3 {
+  margin-top: 5%; }
+
+.final {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(255, 18, 152, 0.8);
+  height: 100%;
+  width: 100%;
+  text-align: center; }
+
+.final h1 {
+  color: #ffe433;
+  margin-top: 15%; }
+
+#play {
+  margin: 0 auto;
+  text-align: center;
+  height: 60px;
+  width: 200px;
+  background-color: rgba(4, 163, 178, 0.9);
+  color: #ffe433;
+  border: 2px solid #ffe433; }
+
+/*# sourceMappingURL=style.css.map */
