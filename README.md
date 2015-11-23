@@ -21,6 +21,6 @@ Yahtzee is a dice game where you roll five dice and try to get specific combinat
 
 When time permits, I would like to add additional features and animations to enhance the game experience. Such as, allowing players to enter their own names, adding a score key, and using a library like Velocity to animate and spin the dice.
 
-![Yakuz-ee Image](images/screenshot.png)
+![Yakuz-ee Image](/images/screenshot.png)
 
 [Link to the site](jeffsteed.github.io/project1)
